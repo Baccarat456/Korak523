@@ -1,0 +1,47 @@
+{
+  "title": "Input schema of the BoardGameGeek trend scraper",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrls": {
+      "title": "Start URLs",
+      "type": "array",
+      "description": "Seed URLs to crawl (BGG hot/trending pages or specific game pages). Examples: https://boardgamegeek.com/hot, https://boardgamegeek.com/browse/boardgame",
+      "editor": "requestListSources",
+      "prefill": [
+        { "url": "https://boardgamegeek.com/hot" },
+        { "url": "https://boardgamegeek.com/browse/boardgame" }
+      ]
+    },
+    "maxRequestsPerCrawl": {
+      "title": "Max Requests per Crawl",
+      "type": "integer",
+      "description": "Maximum number of HTTP requests the crawler will perform.",
+      "default": 500
+    },
+    "useBrowser": {
+      "title": "Use Playwright (for JS-rendered pages)",
+      "type": "boolean",
+      "description": "If true, use PlaywrightCrawler (slower but can handle JS). Default false.",
+      "default": false
+    },
+    "useBggApi": {
+      "title": "Use BGG XML API2 for metadata",
+      "type": "boolean",
+      "description": "If true, fetch structured metadata from BoardGameGeek XML API2 (recommended for details).",
+      "default": true
+    },
+    "followInternalOnly": {
+      "title": "Follow internal links only",
+      "type": "boolean",
+      "description": "If true, only follow links within BGG host(s) to avoid crawling unrelated sites.",
+      "default": true
+    },
+    "concurrency": {
+      "title": "Concurrency",
+      "type": "integer",
+      "description": "Number of parallel requests for CheerioCrawler.",
+      "default": 10
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "actorKeyValueStoreSchemaVersion": 1,
+  "title": "Key-Value store layout",
+  "description": "Store per-game raw JSON or historical snapshots keyed by bgg_id.",
+  "collections": {
+    "games": {
+      "title": "Games",
+      "description": "Full extracted game objects per BGG id",
+      "keyPrefix": "games/",
+      "contentTypes": ["application/json"]
+    }
+  }
+}

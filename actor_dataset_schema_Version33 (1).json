@@ -1,0 +1,42 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "transformation": {
+        "fields": [
+          "name",
+          "bgg_id",
+          "rank",
+          "year",
+          "geek_rating",
+          "avg_rating",
+          "num_voters",
+          "hotness",
+          "categories",
+          "mechanics",
+          "designers",
+          "url"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "name": { "label": "Name", "format": "text" },
+          "bgg_id": { "label": "BGG ID", "format": "text" },
+          "rank": { "label": "Rank", "format": "text" },
+          "year": { "label": "Year", "format": "text" },
+          "geek_rating": { "label": "Geek Rating", "format": "text" },
+          "avg_rating": { "label": "Average Rating", "format": "text" },
+          "num_voters": { "label": "Voters", "format": "text" },
+          "hotness": { "label": "Hotness", "format": "text" },
+          "categories": { "label": "Categories", "format": "text" },
+          "mechanics": { "label": "Mechanics", "format": "text" },
+          "designers": { "label": "Designers", "format": "text" },
+          "url": { "label": "URL", "format": "link" }
+        }
+      }
+    }
+  }
+}

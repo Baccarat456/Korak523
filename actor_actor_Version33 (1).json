@@ -1,0 +1,18 @@
+{
+  "actorSpecification": 1,
+  "name": "BoardGameGeek trend scraper",
+  "title": "BoardGameGeek trend scraper",
+  "description": "Scrapes BoardGameGeek trending/hot games and extracts metadata (rank, ratings, voters, year, designers, mechanics, hotness). Supports BGG XML API2 for reliable metadata.",
+  "version": "0.0",
+  "meta": {
+    "templateId": "ai-generated-actor",
+    "generatedBy": "Gpt-4o-mini"
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json",
+    "keyValueStore": "./kv_schema.json"
+  },
+  "dockerfile": "../Dockerfile"
+}

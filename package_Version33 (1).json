@@ -1,0 +1,19 @@
+{
+  "name": "bgg-trend-scraper",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "BoardGameGeek trend scraper (hot/browse pages + optional BGG API enrichment)",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "apify": "^3.4.2",
+    "crawlee": "^3.13.8",
+    "xml2js": "^0.4.23"
+  },
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "author": "It's not you it's me",
+  "license": "ISC"
+}
